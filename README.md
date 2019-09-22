@@ -21,7 +21,8 @@ const out = estimate(fs.readFileSync('./README.md').toString(), {
 	strip: true,
 	wpm: 225, // WORDS_PER_MIN
 	ipm: 6, // IMAGE_PER_MIN
-	scale: 1
+	scale: 1,
+	pad: 0.25
 });
 
 console.log(out);

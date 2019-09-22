@@ -10,7 +10,7 @@ module.exports = (str, options = {}) => {
 		}, time = {
 			words: count.words / (options.wpm || ENUM.WORDS_PER_MIN),
 			images: count.images / (options.ipm || ENUM.IMAGE_PER_MIN),
-		}, total = (time.words + time.images) * (options.scale || 1);
+		}, total = ((time.words + time.images) * (options.scale || 1)) + (options.pad || 0.25);
 
 	return {
 		count: count,
