@@ -1,31 +1,37 @@
 {
 	"name": "read.estimate",
 	"version": "1.0.1",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"linter": "eslint index.js",
-		"test": "npm run linter && node test.js"
-	},
-	"keywords": [],
-	"author": "anzerr",
-	"license": "MIT",
-	"devDependencies": {
-		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
-	},
-	"eslintConfig": {
-		"extends": "eslint-config-basic"
+	"description": "📚 Medium's like reading time estimation",
+	"keywords": [
+		"estimate",
+		"medium",
+		"nodejs",
+		"text",
+		"util"
+	],
+	"homepage": "https://github.com/anzerr/read.estimate#readme",
+	"bugs": {
+		"url": "https://github.com/anzerr/read.estimate/issues"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git@github.com:anzerr/read.estimate.git"
 	},
+	"license": "MIT",
+	"author": "anzerr",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"scripts": {
+		"linter": "eslint index.js",
+		"test": "npm run linter && node test.js"
+	},
+	"eslintConfig": {
+		"extends": "eslint-config-basic"
+	},
+	"devDependencies": {
+		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
+	},
 	"engines": {
 		"node": ">= 0.10.0"
-	},
-	"types": "index.d.ts",
-	"bugs": {
-		"url": "https://github.com/anzerr/read.estimate/issues"
-	},
-	"homepage": "https://github.com/anzerr/read.estimate#readme"
+	}
 }
